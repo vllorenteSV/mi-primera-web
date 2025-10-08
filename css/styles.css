@@ -1,4 +1,33 @@
+/* Esto es un comentario */
 html {
     font-family: "Alan Sans", sans-serif;
     font-style: normal;
+}
+
+h1 {
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: red;
+    text-transform: uppercase;
+}
+
+/*aplicando estilos con clases*/
+.cabecera {
+    background-color: #ffe2e7;
+    border: 1px solid brown;
+    text-align: center;
+}
+.titulo {
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+.titulo-secundario {
+    color: hsl(0, 59%, 41%);
+    font-size: 30px;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+.bloque-centrado {
+    width: 50%;
+    margin: 0 auto;    
 }
