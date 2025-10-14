@@ -13,9 +13,14 @@ h1 {
 
 /*aplicando estilos con clases*/
 .cabecera {
-    background-color: #ffe2e7;
+    background-color: #bcdbcb;
     border: 1px solid brown;
     text-align: center;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 .titulo {
     font-weight: 200;
@@ -28,6 +33,7 @@ h1 {
     text-transform: uppercase;
 }
 .bloque-centrado {
-    width: 50%;
-    margin: 0 auto;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
