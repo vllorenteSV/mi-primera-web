@@ -1,34 +1,45 @@
 body {
-    background-color: lightblue;
+    background-color: rgb(255, 255, 255);
 }
+.cabezera {
+    
+    display: flex;
+    grid-template-columns: 150px auto 200px;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(207, 31, 31);
+}
+
 .contenedor {
     border: 2px solid black;
     display: grid;
-    grid-template-columns: 60% 40%;
-    grid-template-rows: 60px auto auto 100px;
+    grid-template-columns: 33%;
+    grid-template-rows: 50px auto 500px 50px;
     grid-template-areas: 
-    "verde verde"
-    "rosa rojo"
-    "rosa naranja"
-    ". azul";
+    "navegacion navegacion navegacion"
+    "principal principal aside"
+    "principal principal aside"
+    "footer footer footer";
 }
 .navegacion {
-    grid-area: verde;
-    background-color: green;
+    grid-area: navegacion;
+    display: flex;
+    background-color: rgb(28, 83, 204);
+    align-items: center;
+    justify-content: space-evenly;
 }
-.principal {
-    grid-area: rosa;
-    background-color: pink;
+.maincontent {
+    grid-area: principal;
+    background-color: rgb(71, 201, 201);
 }
-.valoraciones {
-    grid-area: rojo;
-    background-color: red;
+.aside {
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(93, 219, 43);
 }
-.contacto {
-    grid-area: naranja;
-    background-color: orange;
-}
+
 .footer {
-    grid-area: azul;
-    background-color: blue;
+    grid-area: footer;
+    background-color: rgb(206, 52, 180);
 }
