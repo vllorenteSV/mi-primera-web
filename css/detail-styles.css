@@ -1,29 +1,33 @@
 body {
     background-color: rgb(255, 255, 255);
 }
+
 .cabecera {
-    
+
     display: flex;
     grid-template-columns: 150px auto 200px;
     align-items: center;
     justify-content: space-around;
     background: rgb(207, 31, 31);
 }
-.iconos y enlaces{
+
+.iconos y enlaces {
     display: flex;
 
 }
+
 .contenedor {
     border: 2px solid black;
     display: grid;
     grid-template-columns: 33%;
     grid-template-rows: 50px auto 500px 50px;
-    grid-template-areas: 
-    "navegacion navegacion navegacion"
-    "principal principal aside"
-    "principal principal aside"
-    "footer footer footer";
+    grid-template-areas:
+        "navegacion navegacion navegacion"
+        "principal principal aside"
+        "principal principal aside"
+        "footer footer footer";
 }
+
 .navegacion {
     grid-area: navegacion;
     display: flex;
@@ -31,18 +35,39 @@ body {
     align-items: center;
     justify-content: space-evenly;
 }
+
 .maincontent {
+    display: grid;
     grid-area: principal;
     background-color: rgb(71, 201, 201);
+    grid-template-columns: auto auto auto auto  ;
+    grid-template-rows: 200px 200px 200px;
+    gap: 30px;
+    padding: 50px;
+    
 }
+.cart{
+    display: flex;
+    background-color: darkorchid;
+}
+
 .aside {
     grid-area: aside;
     display: flex;
     flex-direction: column;
+    padding: 20px;
+    gap: 30px;
     background-color: rgb(93, 219, 43);
+}
+.cartaside{
+    height: 50px;
+    justify-content: start;
+    background-color: azure;
 }
 
 .footer {
     grid-area: footer;
     background-color: rgb(206, 52, 180);
+    display: flex;
+    justify-content: space-between;
 }
