@@ -1,34 +1,73 @@
 body {
-    background-color: lightblue;
+    background-color: rgb(255, 255, 255);
 }
+
+.cabecera {
+
+    display: flex;
+    grid-template-columns: 150px auto 200px;
+    align-items: center;
+    justify-content: space-around;
+    background: rgb(207, 31, 31);
+}
+
+.iconos y enlaces {
+    display: flex;
+
+}
+
 .contenedor {
     border: 2px solid black;
     display: grid;
-    grid-template-columns: 60% 40%;
-    grid-template-rows: 60px auto auto 100px;
-    grid-template-areas: 
-    "verde verde"
-    "rosa rojo"
-    "rosa naranja"
-    ". azul";
+    grid-template-columns: 33%;
+    grid-template-rows: 50px auto 500px 50px;
+    grid-template-areas:
+        "navegacion navegacion navegacion"
+        "principal principal aside"
+        "principal principal aside"
+        "footer footer footer";
 }
+
 .navegacion {
-    grid-area: verde;
-    background-color: green;
+    grid-area: navegacion;
+    display: flex;
+    background-color: rgb(28, 83, 204);
+    align-items: center;
+    justify-content: space-evenly;
 }
-.principal {
-    grid-area: rosa;
-    background-color: pink;
+
+.maincontent {
+    display: grid;
+    grid-area: principal;
+    background-color: rgb(71, 201, 201);
+    grid-template-columns: auto auto auto auto  ;
+    grid-template-rows: 200px 200px 200px;
+    gap: 30px;
+    padding: 50px;
+    
 }
-.valoraciones {
-    grid-area: rojo;
-    background-color: red;
+.cart{
+    display: flex;
+    background-color: darkorchid;
 }
-.contacto {
-    grid-area: naranja;
-    background-color: orange;
+
+.aside {
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+    background-color: rgb(93, 219, 43);
 }
+.cartaside{
+    height: 50px;
+    justify-content: start;
+    background-color: azure;
+}
+
 .footer {
-    grid-area: azul;
-    background-color: blue;
+    grid-area: footer;
+    background-color: rgb(206, 52, 180);
+    display: flex;
+    justify-content: space-between;
 }
